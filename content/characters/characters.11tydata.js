@@ -1,6 +1,4 @@
 export default {
-	tags: [
-		"characters"
-	],
-	"layout": "layouts/base.njk",
+	"layout": "base.njk",
+	permalink: "characters//{{ name }}/"
 };
