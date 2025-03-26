@@ -1,4 +1,4 @@
 export default {
-	"layout": "base.njk",
+	"layout": "character.njk",
 	permalink: "characters//{{ name }}/"
 };
