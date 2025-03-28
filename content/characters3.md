@@ -1,7 +1,0 @@
----
-name: test character
-tags: ''
-folder: null
-key: value
----
-<p>test text</p>
