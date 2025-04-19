@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+        <style>
+            h1 {
+                color: var(--pico-color-slate-550);
+            }
+        </style>
+    </head>
+    <body>
+        <main class="container">
+            <nav>
+                <a href="/">Home</a>
+                <a href="/characters">Characters</a>
+            </nav>
+            {{ content | safe }}
+        </main>
+    </body>
+</html>

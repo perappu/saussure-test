@@ -1,0 +1,8 @@
+---
+title: "home"
+permalink: /
+---
+
+{% for character in collections.characters %}
+  <li><a href="{{ character.url }}">{{ character.data.name }}</a></li>
+{% endfor %}
