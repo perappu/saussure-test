@@ -1,0 +1,9 @@
+---
+title: "characters"
+permalink: /characters/
+layout: base.njk
+---
+
+{% for character in collections.characters %}
+  <li><a href="{{ character.url }}">{{ character.data.name }}</a></li>
+{% endfor %}

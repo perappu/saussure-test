@@ -1,4 +1,6 @@
 export default {
-	"layout": "character.njk",
-	permalink: "characters//{{ name }}/"
+	layout: "character.njk",
+	permalink: function ({ name }) {
+		return `/characters/${this.slugify(name)}/`;
+	},
 };

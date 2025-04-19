@@ -15,5 +15,12 @@ export default async function(eleventyConfig) {
         .sort((a, b) => b.data.title - a.data.title);
       });
 
+    eleventyConfig.addCollection("literatures", function (collectionApi) {
+      return collectionApi.getFilteredByGlob("content/literatures/*.md")
+        .sort((a, b) => b.data.title - a.data.title);
+      });
+
     eleventyConfig.setLayoutsDirectory("_includes/layouts");
+
+    eleventyConfig.addPassthroughCopy({ "static": "/" });
 }

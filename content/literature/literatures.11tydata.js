@@ -1,4 +1,6 @@
 export default {
-	"layout": "image.njk",
-	permalink: "images//{{ name }}/"
+	layout: "literature.njk",
+	permalink: function ({ title }) {
+		return `/literatures/${this.slugify(title)}/`;
+	},
 };
