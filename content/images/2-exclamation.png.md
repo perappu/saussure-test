@@ -1,5 +1,5 @@
 ---
-character: aristide.md
+character: aristide
 file: 2-exclamation.png
 title: dfdsf
 tags: sfdsf
