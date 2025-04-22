@@ -2,8 +2,11 @@
 layout: base.njk
 ---
 
+<a href="/characters/{{character}}">back to character</a>
 <h1>{{title}}</h1>
-<img src="/local/{{ file }}">
+<div style="text-align: center;">
+<img src="/images/{{ file }}" style="max-height: 500px;">
+</div>
   tags: {{tags}}
   <br>
   {{ content | safe }}

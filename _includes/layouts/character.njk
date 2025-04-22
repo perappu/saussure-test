@@ -2,7 +2,18 @@
 layout: base.njk
 ---
 
-<h1>{{name}}</h1>
-  tags: {{tags}}
-  <br>
+<h1>{{ name }}</h1>
+tags: {{ tags }}
+<br>
   {{ content | safe }}
+
+  {% for image in collections.images | byCharacter(page.fileSlug + '.md') %}
+    {% if loop.first %}
+      <h2>{{ category }}</h2>
+      <div style="display: flex; align-items: flex-start;gap: 10px;">
+      {% endif %}
+        <a href="/images/{{image.data.title}}"><img src="/images/{{ image.data.file }}" style="max-width: 200px;"></a>
+      {% if loop.last %}
+      </div>
+    {% endif %}
+  {% endfor %}

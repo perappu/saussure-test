@@ -1,6 +1,6 @@
 export default {
 	layout: "character.njk",
-	permalink: function ({ name }) {
-		return `/characters/${this.slugify(name)}/`;
+	permalink: function ({ page }) {
+		return `/characters/${page.fileSlug}/`;
 	},
 };
