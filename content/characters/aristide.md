@@ -1,7 +1,7 @@
 ---
 name: Aristide
 tags: 'dragon,elf'
-icon: aristide.md.png
+icon: aristide.md.jpg
 category: null
 folder: ''
 arbitrary_field: value
